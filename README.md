@@ -2,7 +2,7 @@
 This repository contains two very simple webservers used to test the networking between containers deployed on the Cisco IC3000
 
 ## container_a (frontend)
-This container listens on port 80. When browsing it, it will do a ```GET http://1.1.1.1``` to query container_b and display its response in a <p> element.
+This container listens on port 80. When browsing it, it will do a ```GET http://1.1.1.1``` to query container_b and display its response in an HTML p element.
 
 ## container_b (backend)
 Exposes a single endpoint on path / (port 80) that responds with ```{'test': 'hello world'}```
