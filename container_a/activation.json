@@ -1,0 +1,26 @@
+{
+    "resources": {
+        "profile": "c1.tiny",
+        "network": [
+            {
+                "interface-name": "eth0",
+                "network-name": "iox-bridge0",
+                "mode": "static",
+                "ipv4": {
+                    "ip": "1.1.1.2",
+                    "prefix": "30"
+                }
+            },
+            {
+                "interface-name": "eth1",
+                "network-name": "iox-nat_docker0",
+                "port_map": {
+                    "mode": "custom",
+                    "tcp": {
+                        "8080": "80"
+                    }
+                }
+            }
+        ]
+    }
+}

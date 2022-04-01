@@ -1,0 +1,14 @@
+{
+    "resources": {
+        "profile": "c1.tiny",
+        "network": [{
+            "interface-name": "eth0",
+            "network-name": "iox-bridge0",
+            "mode": "static",
+            "ipv4": {
+                "ip": "1.1.1.1",
+                "prefix": "30"
+            }
+        }]
+    }
+}
